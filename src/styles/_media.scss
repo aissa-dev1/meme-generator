@@ -1,0 +1,17 @@
+@media screen and (max-width: 1024px) {
+    .meme_container {
+        .logo_container {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .controls_container {
+            padding: $space;
+        }
+    }
+
+    .memes {
+        grid-template-columns: 1fr !important;
+        padding: $space !important;
+    }
+}

@@ -1,0 +1,25 @@
+@mixin flex($type: row) {
+    display: flex;
+    flex-direction: $type;
+}
+
+@mixin editShapes($rmBorder: true, $raduis: 0.3rem) {
+    outline: none;
+    border-radius: $raduis;
+
+    @if $rmBorder {
+        border: none;
+    } @else {
+        border: 1px solid #000;
+    }
+}
+
+@mixin memeContent() {
+    position: absolute;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 10px 5px 10px #212024;
+}

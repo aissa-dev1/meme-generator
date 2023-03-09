@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/clash-royale.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/src/styles/style.scss" />
+        <title>Meme generator</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="meme_container">
+                <div class="logo_container">
+                    <div>
+                        <img src="/clash-royale.svg" alt="" />
+                        <p>Meme generator</p>
+                    </div>
+
+                    <p>By Aissa Bedr</p>
+                </div>
+
+                <div class="controls_container">
+                    <input id="meme_img_input" type="text" placeholder="Meme image src" />
+                    <input id="meme_title_input" type="text" placeholder="Meme title" />
+                    <input id="meme_disc_input" type="text" placeholder="Meme discription" />
+                    <button id="meme_generate_btn">Generate</button>
+                </div>
+
+                <div class="memes"></div>
+            </div>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
